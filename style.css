@@ -2,11 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Roboto, sans-serif;
-}
-
-img {
-    width: auto;
-    height: 50px;
+    margin: 0;
 }
 
 .header {
@@ -16,13 +12,16 @@ img {
     color: #F9FAF8;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid green;
-    height: 20px;
-    padding: 16px;
-
+    height: 25px;
+    padding: 20px;
 }
 
-a {
+.header img {
+    width: auto;
+    height: 50px;
+}
+
+.links a {
     text-decoration: none;
     color: #F9FAF8;
 }
@@ -33,4 +32,127 @@ a {
     gap: 16px;
     margin: 0;
     padding: 0;
+}
+
+.hero {
+    display: flex;
+    background-color:#a4b1bb;
+    flex: 1;
+    justify-content: center;
+    padding: 48px;
+    gap: 24px;
+}
+
+.hero img {
+    display: flex;
+    width: 350px;
+    height: auto;
+    padding: 24px;
+}
+
+.hero-left {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 398px;
+}
+
+.hero-main {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+    margin: 0;
+}
+
+.hero-secondary {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 8px 0;
+}
+
+.hero-left a {
+    color: white;
+    background-color: #3882F6;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+    text-decoration: none;
+}
+
+.hero-left a:hover {
+    opacity: 0.9;
+    transition: 0.4s;
+    transform: scale(1.05);
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.title {
+    color: #1F2937;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.card img {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    border-radius: 8px;
+}
+
+.subtext {
+    font-size: 18px;
+    color: #1F2937;
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.middle {
+    display: flex;
+    height: 350px;
+    background-color: #E5E7EB;
+    justify-content: center;
+    padding: 30px;
+}
+
+.quote {
+    display: flex;
+    width: 600px;
+    margin: 48px;
+    font-size: 32px;
+    font-style: italic;
+    font-weight:100;
+    height: 200px;
+}
+
+.name {
+    display: flex;
+    height: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    align-items: center;
+    padding: 0;
+    margin-top: 280px;
+    margin-bottom: 30px;
 }
