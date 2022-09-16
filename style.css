@@ -19,6 +19,7 @@ body {
 .header img {
     width: auto;
     height: 50px;
+    border-radius: 50%;
 }
 
 .links a {
@@ -83,9 +84,10 @@ body {
 }
 
 .hero-left a:hover {
-    opacity: 0.9;
+    opacity: 0.6;
     transition: 0.4s;
-    transform: scale(1.05);
+    transform: 250ms;
+    background-color: #052862
 }
 
 .top {
@@ -155,4 +157,68 @@ body {
     padding: 0;
     margin-top: 280px;
     margin-bottom: 30px;
+}
+
+.bottom {
+    border: 1px solid red;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #3882F6;
+    height: 150px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    margin: auto;
+
+}
+
+.container-left {
+    flex-direction: column;
+    padding: 8px;
+    margin: 12px;
+}
+
+.container-right {
+    padding: 8px;
+    margin: 18px;
+}
+
+.subscribe.title {
+    padding: 8px;
+}
+
+.subscribe.text {
+    padding: 8px;
+    text-align: center;
+}
+
+.container-right a {
+    border: 1px solid white;
+    padding: 8px 16px;
+    margin-right: 12px;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+}
+
+/* the scale transformation does not work upon hovering*/
+.container-right a:hover {
+    transition: 0.4s;
+    transform: scale(1.2);
+    background-color: #1167f2
+}
+
+.footer {
+    background-color: #1F2937;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
 }
